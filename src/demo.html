@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jetzt Zielleistungsstufe ermitteln!</title>
+	
+<style>
+
+@font-face {
+		font-family: 'Open Sans';
+		src: url('http://my-paris:81/inlumia/font/OpenSans.otf');
+	}
+
+	.unternehmen {
+		fill: seagreen;
+	}
+
+	.referenzC {
+		fill: #4682B4;
+	}
+
+	@media print {
+		#noPrint {
+			display: none;
+		}
+		body {
+			margin: 10mm 10mm 10mm 10mm;
+			display: table;
+			table-layout: fixed;
+			padding-top: 0.5cm;
+			padding-bottom: 0.5cm;
+			height: auto;
+		}
+	}
+
+	body {
+		margin: 5mm 10mm 10mm 10mm;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	@page {
+		size: auto;
+		/* auto is the current printer page size */
+		margin: 7mm;
+		/* this affects the margin in the printer settings */
+	}
+
+
+	text,
+	h3 {
+		font-family: 'Open Sans', sans-serif;
+		fill: #242424;
+		text-align: justify;
+		text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+		cursor: default;
+	}
+
+	h2 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		fill: #242424;
+		text-align: justify;
+		text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+		cursor: default;
+
+	}
+
+	/*Print Button*/
+
+	.right {
+		float: right;
+		overflow: hidden;
+		background-color: #f1f1f1;
+	}
+
+	/* Style the tab */
+
+	div.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+
+	/* Style the buttons inside the tab */
+
+	div.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font: 16px sans-serif;
+	}
+
+	/* Change background color of buttons on hover */
+
+	div.tab button:hover {
+		background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+
+	div.tab button.active {
+		background-color: #ccc;
+	}
+
+	/* Style the tab content */
+
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border-top: none;
+	}
+
+	body {
+				font-family: "Open Sans", sans-serif;
+			    font-size: 18px;
+			    font-weight: 400;
+			    line-height: 1.7;
+			    /*fill: rgb(36, 36, 36);*/
+			    text-align: left;
+			    /*text-shadow: rgb(255, 255, 255) 0px 1px 0px, rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) -1px 0px 0px, rgb(255, 255, 255) 0px -1px 0px;*/
+			    cursor: default;
+			    margin: 5mm 10mm 10mm;
+			    background-color:#f3f3f3;
+				}
+			#description{
+				line-height: 1.32;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14.5px;
+			}	
+			.container { 
+				margin:50px ; max-width:460px; font-family: 'Open Sans', sans-serif;
+			}
+
+			.modal {
+	            display: none; /* Hidden by default */
+	            position: fixed; /* Stay in place */
+	            z-index: 1; /* Sit on top */
+	            padding-top: 300px; /* Location of the box */
+	            left: 0;
+	            top: 0;
+	            width: 100%; /* Full width */
+	            height: 100%; /* Full height */
+	            overflow: auto; /* Enable scroll if needed */
+	            background-color: #A52A2A; /* Fallback color */
+	            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            /* Modal Content */
+            .modal-content {
+	            background-color: #A52A2A;
+	            margin: auto;
+	            padding: 12px;
+	            border: 1px solid black/*#888*/;
+	            width: 21%;
+	            text-shadow: none;
+	            font-size: 10pt;
+            }
+            /* The Close Button */
+            .close {
+	            color: #aaaaaa;
+	            float: right;
+	            font-size: 22.5px;
+	            /*font-weight: bold;*/
+            }
+            .close:hover,
+            .close:focus {
+	            color: #A52A2A;
+	            text-decoration: none;
+	            cursor: pointer;
+            }
+            #colorp{
+	            color : white;
+	            /*background-color: #A52A2A*/
+	            }
+
+</style>
+
+	</head>
+
+
+<body>
+
+	
+	<div>
+		<h2 style="font-size: 20px"><b id = "mainheading">Ermittlung Ihrer Zielposition – Auswahl zu berücksichtigender Industrie 4.0-Trends (Übersicht)</b></h2>
+		<p id = "description" style="font-size: 13pt">Ausgehend von Ihrer zuvor ermittelten heutigen Industrie 4.0-Leistungsfähigkeit besteht nun die Möglichkeit, eine Erfolg versprechende Zielposition für Ihr Unternehmen zu ermitteln. Die Grundlage dafür bildet eine Trendanalyse zur Abschätzung zukünftiger Industrie 4.0-Entwicklungen mit einem Zeithorizont von circa 5 Jahren. Bitte wählen Sie aus der nachfolgenden Liste alle Industrie 4.0-Trends aus, die Sie bei der Ermittlung Ihrer Zielposition berücksichtigen möchten. Eine ausführliche Trendbeschreibung erhalten Sie, wenn Sie den Mauszeiger auf den Titel eines Trends in der Liste bewegen.</p>
+	</div>
+	
+
+	
+</body>
+</html>
