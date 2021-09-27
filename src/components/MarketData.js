@@ -26,6 +26,9 @@ const MarketData = (props) => {
       .then((response) => response.json())
       .then((result) => {
         props.marketData(result);
+      })
+      .catch((error) => {
+        console.log(error)
       });
   }, [source, destination]);
 

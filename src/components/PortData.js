@@ -22,6 +22,9 @@ const PortData = (props) => {
       .then((response) => response.json())
       .then((result) => {
         props.portData(result);
+      })
+      .catch((error) => {
+        console.log(error)
       });
   }, []);
 
